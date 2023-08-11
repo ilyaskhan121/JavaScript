@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Logical Operators</title>
+  </head>
+  <body>
+    <script>
+      // let firstname="hello";//short circuit :: if the first condition become true
+      // //no need for the evaluation of next conditions
+      // let lastname="";
+      // let nickname="KHanSaib";
+      // alert(firstname||lastname||nickname||"anonymous");//if all the conditions
+      // //were false then it will show anonymous
+      // let name = prompt("who's there !");
+      // if(name==="Admin"){
+      //     let pass_check = prompt("Enter your password");
+      //     if(pass_check==="khan"){
+      //         alert("you enter correct password!")
+      //     }
+      //     else if(pass_check==''||pass_check==null){
+      //         alert("canceled!")
+      //     }
+      //     else{
+      //         alert("you entered wrong password")
+      //     }
+      // }
+      // else if(name==="",name===null){
+      //     alert("Canceled!")
+      // }
+      // else{
+      //     alert("I don't know !")
+      // }
+      // let height =0;
+      // alert(height||100);//100 shows first truthy value
+      // let width=undefined;
+      // alert(width??100)//0 checks the first defined value or not null value
+      // let h = null;
+      // let w = null;
+      // // important: use parentheses
+      // let area = (h ?? 100) * (w ?? 50);
+      // alert(area); // 5000
+      let h = null
+      let w = null
+      // important: use parentheses
+      let area = h ?? 100 * w ?? 50
+      alert(area) // not same as above
+    </script>
+  </body>
+</html>

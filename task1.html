@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loop</title>
+  </head>
+  <body>
+    <script>
+      for (;;) {
+        let number = prompt("Enter number greater than 100!")
+        if (number == null) {
+          break
+        }
+        if (number < 100) {
+          continue
+        }
+        if (number > 100) {
+          alert("Yes It is Greater than 100")
+          break
+        }
+      }
+      let num
+      do {
+        num = prompt("Enter number greater than 100!")
+      } while (num <= 100 && num)
+      let n = 10
+      nextprime: for (let i = 2; i <= n; i++) {
+        for (let j = 2; j < i; j++) {
+          if (i % j == 0) continue nextprime
+        }
+        alert(i)
+      }
+    </script>
+  </body>
+</html>
